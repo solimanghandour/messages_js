@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/LOGO.png" type="image/x-icon">
+    <title>MESSAGES</title>
+</head>
+<body>
+  <div class="container">
+    <div class="message-card">
+        <div class="logo-pic">
+            <img src="img/LOGO.png" alt="logo">
+        </div>
+        <div class="title">
+            <h1>leave your message</h1>
+        </div>
+        <form  onsubmit="SendEmail(); reset(); return false;">
+        <input type="username" name="name" id="name"placeholder="your name" required>
+        <input type="email" name="email" id="email"placeholder="email" required>
+        <input type="text" name="phone" id="phone"placeholder="phone no" required>
+        <textarea  id="message" cols="30" rows="5" placeholder="leave your message"></textarea>
+        <button id="submit" type="submit">send</button>
+        </form>
+
+
+    </div>
+  </div>
+
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="mian.js"></script>
+</body>
+</html>
